@@ -1,0 +1,234 @@
+{
+    "agentes": 
+    [
+        {
+        "nombre": "joaquin",
+        "apellido": "morillas",
+        "rol": "bioquimico",
+        "dias_de_trabajo": {"0": [7,14], "1":[7,13], "4":[7,14] },
+        "dias_de_guardia": [],
+        "hace_guardia": true,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        },
+	{
+        "nombre": "victoria",
+        "apellido": "molina",
+        "rol": "bioquimico",
+        "dias_de_trabajo": {"0":[7,14], "2":[7,14], "4":[7,14]},
+        "dias_de_guardia": [],
+        "hace_guardia": true,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        },{
+        "nombre": "patricio",
+        "apellido": "perrota",
+        "rol": "bioquimico",
+        "dias_de_trabajo": {"1": [10,14], "2": [7,19], "3": [7,14]},
+        "dias_de_guardia": [],
+        "hace_guardia": true,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        },
+	{
+        "nombre": "antonella",
+        "apellido": "spada",
+        "rol": "bioquimico",
+        "dias_de_trabajo": {"0":[9,14], "1":[7,14], "2": [9,14], "3":[7,14]},
+        "dias_de_guardia": [],
+        "hace_guardia": true,
+        "licencias": [],
+        "reduccion_horaria" : 2
+        },
+	{
+        "nombre": "pamela",
+        "apellido": "gaich",
+        "rol": "bioquimico",
+        "dias_de_trabajo": {"0":[8,15], "1":[8,15], "2": [8,15],"3":[8,15],"4": [8,15]},
+        "dias_de_guardia": [],
+        "hace_guardia": false,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        },
+	{
+        "nombre": "lorena",
+        "apellido": "bergesio",
+        "rol": "bioquimico",
+        "dias_de_trabajo": {"0":[7,14], "1":[7,14], "2": [7,14],"3":[7,14],"4": [7,14]},
+        "dias_de_guardia": [],
+        "hace_guardia": false,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        },
+	{
+        "nombre": "rodolfo",
+        "apellido": "galetto",
+        "rol": "bioquimico",
+        "dias_de_trabajo": {"0":[8,14], "1":[8,14], "2": [8,14],"3":[8,14],"4": [8,14]},
+        "dias_de_guardia": [],
+        "hace_guardia": true,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        },
+	{
+        "nombre": "vanesa",
+        "apellido": "comello",
+        "rol": "bioquimico",
+        "dias_de_trabajo": {"0":[7,14], "1":[7,14], "2": [7,14],"3":[7,14],"4": [7,14]},
+        "dias_de_guardia": [],
+        "hace_guardia": false,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        },
+	{
+        "nombre": "karina",
+        "apellido": "castellano",
+        "rol": "tecnico",
+        "dias_de_trabajo": {"0":[7,12], "1":[7,12], "2": [7,12],"3":[7,12],"4": [7,12]},
+        "dias_de_guardia": [],
+        "hace_guardia": true,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        },
+	{
+        "nombre": "pablo",
+        "apellido": "brizuela",
+        "rol": "tecnico",
+        "dias_de_trabajo": {"0":[7,13], "1":[7,13], "2": [7,13],"3":[7,13],"4": [7,13]},
+        "dias_de_guardia": [],
+        "hace_guardia": true,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        },
+	{
+        "nombre": "paola",
+        "apellido": "hidalgo",
+        "rol": "tecnico",
+        "dias_de_trabajo": {"0":[7,14], "1":[7,14], "2": [7,14],"3":[7,14],"4": [7,14]},
+        "dias_de_guardia": [],
+        "hace_guardia": false,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        },
+	{
+        "nombre": "adriana",
+        "apellido": "vicentini",
+        "rol": "tecnico",
+        "dias_de_trabajo": {"0":[7,14], "1":[7,14], "2": [7,14],"3":[7,14],"4": [7,14]},
+        "dias_de_guardia": [],
+        "hace_guardia": false,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        },
+	{
+        "nombre": "angeles",
+        "apellido": "romano",
+        "rol": "tecnico",
+        "dias_de_trabajo": {"0":[7,14], "1":[7,14], "2": [7,14],"3":[7,14],"4": [7,14]},
+        "dias_de_guardia": [],
+        "hace_guardia": false,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        },
+	{
+        "nombre": "jose",
+        "apellido": "mazzoli",
+        "rol": "bioquimico",
+        "dias_de_trabajo": {"0":[14,19], "1":[14,19],"3":[14,19],"4": [14,19]},
+        "dias_de_guardia": [],
+        "hace_guardia": true,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        },
+	{
+        "nombre": "bethenia",
+        "apellido": "alvarez",
+        "rol": "bioquimico",
+        "dias_de_trabajo": {"0":[15,20], "1":[15,20], "2": [15,20],"4": [15,20]},
+        "dias_de_guardia": [],
+        "hace_guardia": true,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        },
+	{
+        "nombre": "ana",
+        "apellido": "tamaro",
+        "rol": "bioquimico",
+        "dias_de_trabajo": {"3":[14,19]},
+        "dias_de_guardia": "3",
+        "hace_guardia": true,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        },
+	{
+        "nombre": "martin",
+        "apellido": "avaro",
+        "rol": "bioquimico",
+        "dias_de_trabajo": {},
+        "dias_de_guardia": "2",
+        "hace_guardia": true,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        },
+	{
+        "nombre": "veronica",
+        "apellido": "escudero",
+        "rol": "tecnico",
+        "dias_de_trabajo": {"0":[7,19]},
+        "dias_de_guardia": "0",
+        "hace_guardia": true,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        },
+	{
+        "nombre": "evangelina",
+        "apellido": "bersia",
+        "rol": "tecnico",
+        "dias_de_trabajo": {"1":[7,19]},
+        "dias_de_guardia": "1",
+        "hace_guardia": true,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        },
+	{
+        "nombre": "mariana",
+        "apellido": "celucci",
+        "rol": "tecnico",
+        "dias_de_trabajo": {"2":[7,19]},
+        "dias_de_guardia": "2",
+        "hace_guardia": true,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        },
+	{
+        "nombre": "mariela",
+        "apellido": "canale",
+        "rol": "tecnico",
+        "dias_de_trabajo": {"3":[7,19]},
+        "dias_de_guardia": "3",
+        "hace_guardia": true,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        },
+	{
+        "nombre": "luciana",
+        "apellido": "gauna",
+        "rol": "tecnico",
+        "dias_de_trabajo": {"4":[7,19]},
+        "dias_de_guardia": [],
+        "hace_guardia": true,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        },
+	{
+        "nombre": "leandra",
+        "apellido": "lanza",
+        "rol": "tecnico",
+        "dias_de_trabajo": {},
+        "dias_de_guardia": [],
+        "hace_guardia": true,
+        "licencias": [],
+        "reduccion_horaria" : 0
+        }
+    ]
+}
