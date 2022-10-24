@@ -10,6 +10,9 @@ locale.setlocale(locale.LC_TIME, '')
 
 
 class MesDeGuardia:
+  """
+  Creates the month object where the day_creator.Day objects will be stored
+  """
   guardias = dict()
 
   def __init__(self, year, month, feriados):
@@ -24,6 +27,12 @@ class MesDeGuardia:
 
   
   def get_month_days(self):
+    """
+    Creates the day_creator.Day objects and instert them into two lists according
+    if the Day is a weekday or not
+
+    Return : None
+    """
     for day in self.month_days:
       day = Day(day.year,day.month,day.day)
 
@@ -34,23 +43,43 @@ class MesDeGuardia:
         self.fin_de_semana.append(day)
   
   def add_feriados(self):
+    """
+    Instert the holidays in a list
+
+    Return : None
+    """
     if self.feriados:
       for day in self.feriados:
         self.guardias[day] = self.feriados[day]
         
   def __len__(self):
+    """
+    Returns the total number of days in the month
+    """
     return len(self.dias_de_semana) + len(self.fin_de_semana) + len(self.feriados)
 
   def dias_habiles(self):
+    """
+    Returns the total number of workable days in the month
+    """
     return len(self.dias_de_semana)
 
   def horas_de_trabajo(self,):
+    """
+    Returns the total number of workable hours in the month
+    """
     return len(self.dias_de_semana) * 7
 
   def __str__(self):
+    """
+    Retruns the formated string representation of the month
+    """
     return self.month.strftime("%m")
 
   def get_median_ratio(self, agentes):
+    """
+    Returns the median hours worked of the agents in the month
+    """
     ratio_sum = 0
     for agente in agentes:
       ratio_sum += agente.get_ratio_hours(self)
@@ -60,6 +89,9 @@ class MesDeGuardia:
     return median
   
   def get_guardias_median_ratio(self, agentes):
+    """
+    Returns the median hours worked of the agents that are able to do guards
+    """
     ratio_sum = 0
     agentes_guardia = 0
     for agente in agentes:

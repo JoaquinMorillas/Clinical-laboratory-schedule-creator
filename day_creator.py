@@ -8,20 +8,30 @@ locale.setlocale(locale.LC_TIME, '')
 
 
 class Day(datetime):
+    """
+    Custom day object that inherit from datetime
+    """
     def __init__(self, *args, **kargs):
         super().__init__()
         # self.week_day = self.is_week_day()
         self.agentes_de_guardia = []
 
     def __str__(self):
+        """
+        Return the formated string of the Day object
+        """
         return self.strftime("%A %d")
 
     # def is_week_day(self):
+
     #     if self.weekday() not in [5, 6]:
     #         return True
     #     return False
 
     def get_agents(self, agentes):
+        """
+        Returns the agents that work this day
+        """
         agentes_del_dia = {}
         for agente in agentes:
             if self.weekday() in agente.dias_de_trabajo:
@@ -31,6 +41,12 @@ class Day(datetime):
         return agentes_del_dia
 
     def get_agentes_de_guarida_weekday(self, agentes, mes, lenth):
+        """
+        Picks the agents that will do the guards in this day
+        this functions is used for weekdays
+
+        Return : bool
+        """
         delta = timedelta(days=1)
         
         previous_day = self - delta
@@ -128,6 +144,12 @@ class Day(datetime):
 
 
     def get_agentes_de_guarida_weekend(self, agentes, mes, lenth):
+        """
+        Picks the agents that will do the guards in this day
+        this functions is used for weekends
+
+        Return : bool
+        """
         delta = timedelta(days=1)
         previous_day = self - delta
         next_day = self + delta
@@ -171,7 +193,12 @@ class Day(datetime):
         return True
         
     def guardia_viernes(self, agentes, mes):
+        """
+        Picks the agents that will do the guards in this day
+        this functions is used for fridays
 
+        Return : bool
+        """
         agents = []
         for agente in agentes:
             if agente.apellido in ["gauna", "lanza"]:

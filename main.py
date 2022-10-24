@@ -12,6 +12,11 @@ locale.setlocale(locale.LC_TIME, '')
 
 
 def get_licenses(agentes,year, month):
+    """
+    Asks the user to select agents and assing them leave days
+
+    Return : None 
+    """
     while True:
         print("Selecciona al agente que dispone de licencias('q' para salir): ")
         for idx, agente in enumerate(agentes):
@@ -35,6 +40,12 @@ def get_licenses(agentes,year, month):
             break
                     
 def get_dias_pedidos(agentes, year, month):
+    """
+    Asks the user to select agents and assing them days in wich the agents
+    has asked not to do a guard
+
+    Return : None
+    """
     while True:
         print("Selecciona al agente que ha solicitado no hacer guardia un dia('q' para salir): ")
         for idx, agente in enumerate(agentes):
@@ -54,6 +65,9 @@ def get_dias_pedidos(agentes, year, month):
             agente.dias_pedidos.append(Day(year, month, int(dia)))   
 
 def prints(agentes,year, month, mes):
+    """
+    Prints out all the information relevant for the user
+    """
     
     for dia in sorted(mes.guardias.keys()):
         print(dia, ":")
@@ -74,6 +88,11 @@ def prints(agentes,year, month, mes):
     
 
 def main(agentes,year, month, mes):
+    """
+    Calls all the relevant functions to complete the work schedule
+
+    Return : None
+    """
 
     for dia in mes.dias_de_semana:
        
@@ -92,12 +111,12 @@ def main(agentes,year, month, mes):
 
 with open("agentes.json") as file:
     json_string = file.read()
-    json_data = json.loads(json_string)
+    json_data = json.loads(json_string) # Loads the json file that contains the agents
 
 agentes_dict = json_data["agentes"]
 agentes = []
 
-for agente in agentes_dict:
+for agente in agentes_dict: #Creates the agents
     a = Agente(agente["nombre"], agente["apellido"], agente["rol"],
     agente["dias_de_trabajo"], agente["dias_de_guardia"], agente["hace_guardia"], 
     agente["licencias"], agente["reduccion_horaria"])
