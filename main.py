@@ -147,9 +147,9 @@ mes = MesDeGuardia(year, month, feriados)
 mes.get_month_days()
 mes.add_feriados()
 
-get_dias_pedidos(agentes, month, year)
-get_licenses(agentes, month, year)
+get_dias_pedidos(agentes,year,  month)
+get_licenses(agentes, year, month)
 
-main(agentes, month, year, mes)
+main(agentes, year,  month, mes)
 
       

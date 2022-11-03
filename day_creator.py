@@ -182,7 +182,7 @@ class Day(datetime):
             if len(shuf) == 0:
                 return False   
 
-        if "bioquimico" not in roles[:-1]:
+        if "bioquimico" not in roles[:1]:
 
             self.agentes_de_guardia = []
             roles = []
